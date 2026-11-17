@@ -1,7 +1,9 @@
 {
-  "name": "joplin-plugin-search-and-replace",
-  "version": "2.2.0",
+  "name": "joplin-plugin-search-and-replace-i18n",
+  "version": "2.2.1",
   "scripts": {
+    "i18n": "node scripts/po2json.js",
+    "predist": "npm run i18n",
     "dist": "webpack --joplin-plugin-config buildMain && webpack --joplin-plugin-config buildExtraScripts && webpack --joplin-plugin-config createArchive",
     "prepare": "npm run dist",
     "update": "npm install -g generator-joplin && yo joplin --update"
@@ -19,6 +21,7 @@
     "chalk": "^4.1.0",
     "copy-webpack-plugin": "^6.1.0",
     "fs-extra": "^9.0.1",
+    "gettext-parser": "^4.0.4",
     "glob": "^7.1.6",
     "on-build-webpack": "^0.1.0",
     "tar": "^6.0.5",

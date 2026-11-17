@@ -2,6 +2,7 @@ import joplin from "api";
 import { ContentScriptType, MenuItemLocation } from "api/types";
 import { getDialogHTML } from "./dialog";
 import { getPanelHTML } from "./panel";
+import { _, initI18n } from "./i18n";
 import { getSettings, registerAllSettings } from "./settings";
 import { Dialog } from "./utils/dialogs";
 import { getEditorState } from "./utils/joplinUtils";
@@ -16,6 +17,9 @@ let selectedText: string = "";
 
 joplin.plugins.register({
     onStart: async function () {
+        // Follow Joplin's UI language:
+        await initI18n();
+
         // Register this plugin's settings, so the user can access them:
         await registerAllSettings();
 
@@ -70,10 +74,10 @@ joplin.plugins.register({
 		await dialogSAR.create();
         await dialogSAR.addScript("./webview_dialog.css");
         await dialogSAR.setButtons([
-			{id: "findPrevious", title: "Find previous"},
-			{id: "findNext", title: "Find next"},
-			{id: "replace", title: "Replace"},
-			{id: "replaceAll", title: "Replace all"},
+			{id: "findPrevious", title: _("Find previous")},
+			{id: "findNext", title: _("Find next")},
+			{id: "replace", title: _("Replace")},
+			{id: "replaceAll", title: _("Replace all")},
 			{id: "cancel"}
 		]);
 		dialogSAR.addPositiveIds("findNext", "findPrevious", "replace", "replaceAll");
@@ -113,7 +117,7 @@ joplin.plugins.register({
 		*/
         await joplin.commands.register({
             name: "searchAndReplace",
-            label: "Search and replace",
+            label: _("Search and replace"),
             enabledCondition:
                 "markdownEditorPaneVisible && !richTextEditorVisible",
             execute: async () => {
@@ -191,7 +195,7 @@ joplin.plugins.register({
 
         // Add command to 'Edit' menu:
         joplin.views.menuItems.create(
-            "Search and replace",
+            "searchAndReplaceMenuItem",
             "searchAndReplace",
             MenuItemLocation.Edit,
             { accelerator: "CmdOrCtrl+H" }
@@ -206,8 +210,8 @@ joplin.plugins.register({
                 switch (message.name) {
                     case "alert":
                         dialogAlert.useTemplate({
-                            text: sanitizeHTML(message.text),
-                            title: message.title,
+                            text: sanitizeHTML(_(message.text, ...(message.textArgs || []))),
+                            title: sanitizeHTML(_(message.title)),
                         });
                         await dialogAlert.open();
                         return dialogAlert.getPreparedDialogResult();

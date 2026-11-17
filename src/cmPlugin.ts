@@ -5,11 +5,16 @@ import { Range, escapeRegExp, escapeReplacement, wildCardToRegExp, prepareRegex,
 // import replace from 'preserve-case';   // Doesn't work.
 const replacePreserveCase: Function = require("preserve-case"); // Works.
 
-async function alert(context, title, text) {
+/**
+ * Shows an alert. "title" and "text" are untranslated msgids; the main plugin
+ * translates them (see src/i18n.ts). "textArgs" replace "%s" in "text".
+ */
+async function alert(context, title: string, text: string, textArgs: any[] = []) {
     return await context.postMessage({
         name: "alert",
         title: title,
-        text: text
+        text: text,
+        textArgs: textArgs
     });
 }
 
@@ -93,7 +98,7 @@ function findNext(context, cm: Editor, form, replace: boolean) {
     try {
         regex = prepareRegex(form.searchPattern, {...form.options, global: false});
     } catch (exc) {
-        alert(context, "Invalid regular expression", exc.toString());
+        alert(context, "Invalid regular expression", "%s", [exc.toString()]);
     }
 
     // Search:
@@ -110,7 +115,7 @@ function findNext(context, cm: Editor, form, replace: boolean) {
 
     // Still nothing found?
     if (!match) {
-        alert(context, "No more occurences found", `"${form.searchPattern}" couldn't be found.`);
+        alert(context, "No more occurences found", "\"%s\" couldn't be found.", [form.searchPattern]);
         return;
     }
 
@@ -151,7 +156,7 @@ function findPrevious(context, cm: Editor, form) {
     try {
         regex = prepareRegex(form.searchPattern, {...form.options, global: true});
     } catch (exc) {
-        alert(context, "Invalid regular expression", exc.toString());
+        alert(context, "Invalid regular expression", "%s", [exc.toString()]);
     }
 
 
@@ -169,7 +174,7 @@ function findPrevious(context, cm: Editor, form) {
 
     // Still nothing found?
     if (!match) {
-        alert(context, "No more occurences found", `"${form.searchPattern}" couldn't be found.`);
+        alert(context, "No more occurences found", "\"%s\" couldn't be found.", [form.searchPattern]);
         return;
     }
 
@@ -238,7 +243,7 @@ module.exports = {
                 try {
                     regex = prepareRegex(form.searchPattern, {...form.options, global: true});
                 } catch (exc) {
-                    alert(context, "Invalid regular expression", exc.toString());
+                    alert(context, "Invalid regular expression", "%s", [exc.toString()]);
                 }
 
                 // Get content:
@@ -246,7 +251,7 @@ module.exports = {
 
                 // Nothing found?
                 if (content.search(regex) < 0) {
-                    alert(context, "No occurences found", `"${form.searchPattern}" couldn't be found. Nothing was replaced.`);
+                    alert(context, "No occurences found", "\"%s\" couldn't be found. Nothing was replaced.", [form.searchPattern]);
                     return;
                 }
 
