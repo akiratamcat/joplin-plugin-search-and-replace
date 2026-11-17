@@ -1,0 +1,170 @@
+# Search & Replace i18n - UI translations.
+# Copyright (C) FelisDiligens, akiratamcat
+# This file is distributed under the same license as the plugin (MIT).
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: joplin-plugin-search-and-replace-i18n\n"
+"Report-Msgid-Bugs-To: https://github.com/akiratamcat/joplin-plugin-search-and-replace/issues\n"
+"POT-Creation-Date: 2026-11-17 00:00+0900\n"
+"PO-Revision-Date: 2026-11-17 00:00+0900\n"
+"Language-Team: Chinese (Traditional)\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/settings.ts
+msgid "Search & Replace i18n"
+msgstr ""
+
+#: src/settings.ts
+msgid "GUI Preference"
+msgstr "介面偏好"
+
+#: src/settings.ts
+msgid "If you don't like the panel, you can switch to a popup dialog instead."
+msgstr "如果您不喜歡面板，可以改用彈出對話方塊。"
+
+#: src/settings.ts
+msgid "Open a panel (default, recommended)"
+msgstr "開啟面板（預設，建議）"
+
+#: src/settings.ts
+msgid "Open a dialog (like in previous versions)"
+msgstr "開啟對話方塊（與舊版本相同）"
+
+#: src/index.ts src/panel.ts src/dialog.ts
+msgid "Search and replace"
+msgstr "尋找與取代"
+
+#: src/index.ts
+msgid "Find previous"
+msgstr "尋找上一個"
+
+#: src/index.ts
+msgid "Find next"
+msgstr "尋找下一個"
+
+#: src/index.ts src/panel.ts src/dialog.ts
+msgid "Replace"
+msgstr "取代"
+
+#: src/index.ts src/panel.ts
+msgid "Replace all"
+msgstr "全部取代"
+
+#: src/panel.ts
+msgid "Close"
+msgstr "關閉"
+
+#: src/panel.ts
+msgid "Please return to the markdown editor."
+msgstr "請返回 Markdown 編輯器。"
+
+#: src/panel.ts src/dialog.ts
+msgid "Find"
+msgstr "尋找"
+
+#: src/panel.ts
+msgid "Previous"
+msgstr "上一個"
+
+#: src/panel.ts
+msgid "Next"
+msgstr "下一個"
+
+#: src/panel.ts
+msgid "(all)"
+msgstr "（全部）"
+
+#: src/panel.ts
+msgid "Regex:"
+msgstr "規則運算式："
+
+#: src/panel.ts src/dialog.ts
+msgid "Options:"
+msgstr "選項："
+
+#: src/panel.ts src/dialog.ts
+msgid "Wrap around"
+msgstr "循環尋找"
+
+#: src/panel.ts src/dialog.ts
+msgid "Match case"
+msgstr "大小寫須相符"
+
+#: src/panel.ts src/dialog.ts
+msgid "Match whole words only"
+msgstr "全字拼寫須相符"
+
+#: src/panel.ts src/dialog.ts
+msgid "Preserve case"
+msgstr "保留大小寫"
+
+#: src/panel.ts src/dialog.ts
+msgid "Use 'multi line' flag"
+msgstr "使用「多行」旗標"
+
+#: src/panel.ts src/dialog.ts
+msgid "Literal search"
+msgstr "一般尋找"
+
+#: src/panel.ts src/dialog.ts
+msgid "Use Wildcards"
+msgstr "使用萬用字元"
+
+#: src/panel.ts src/dialog.ts
+msgid "Use Regular Expression"
+msgstr "使用規則運算式"
+
+#: src/panel.ts
+msgid "Show help"
+msgstr "顯示說明"
+
+#: src/panel.ts
+msgid "When you reach the end of the note, it will wrap around to the beginning of the note (and vice versa)."
+msgstr "到達筆記結尾時，會從筆記開頭繼續尋找（反之亦然）。"
+
+#: src/panel.ts
+msgid "With wildcards enabled, you can search using <code>?</code> (any <b>one</b> character) and <code>*</code> (any characters, zero or more). Escape them like so: <code>\\*</code>, <code>\\?</code>"
+msgstr "啟用萬用字元後，可以使用 <code>?</code>（任意<b>一個</b>字元）和 <code>*</code>（零個或多個任意字元）進行尋找。如需尋找這些字元本身，請如此跳脫：<code>\\*</code>、<code>\\?</code>"
+
+#: src/panel.ts
+msgid "If you enable regular expressions, it's going to use JavaScript's regex. You can also use groups in the replacement text using <code>$1</code>, <code>$2</code>, and so on. Tip: Use regex101.com"
+msgstr "啟用規則運算式後，將使用 JavaScript 的規則運算式。在取代文字中可以使用 <code>$1</code>、<code>$2</code> 等參照群組。提示：可以使用 regex101.com"
+
+#: src/panel.ts
+msgid "This plugin internally translates every search pattern to a regular expression. You can preview the used regex."
+msgstr "本外掛程式會在內部將所有尋找模式轉換為規則運算式。您可以預覽實際使用的規則運算式。"
+
+#: src/cmPlugin.ts
+msgid "Empty pattern"
+msgstr "尋找內容為空"
+
+#: src/cmPlugin.ts
+msgid "Please enter a search pattern."
+msgstr "請輸入尋找內容。"
+
+#: src/cmPlugin.ts
+msgid "Invalid regular expression"
+msgstr "無效的規則運算式"
+
+#: src/cmPlugin.ts
+msgid "No more occurences found"
+msgstr "找不到更多相符項目"
+
+#: src/cmPlugin.ts
+#, c-format
+msgid "\"%s\" couldn't be found."
+msgstr "找不到「%s」。"
+
+#: src/cmPlugin.ts
+msgid "No occurences found"
+msgstr "找不到相符項目"
+
+#: src/cmPlugin.ts
+#, c-format
+msgid "\"%s\" couldn't be found. Nothing was replaced."
+msgstr "找不到「%s」。未進行任何取代。"

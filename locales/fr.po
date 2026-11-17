@@ -1,0 +1,170 @@
+# Search & Replace i18n - UI translations.
+# Copyright (C) FelisDiligens, akiratamcat
+# This file is distributed under the same license as the plugin (MIT).
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: joplin-plugin-search-and-replace-i18n\n"
+"Report-Msgid-Bugs-To: https://github.com/akiratamcat/joplin-plugin-search-and-replace/issues\n"
+"POT-Creation-Date: 2026-11-17 00:00+0900\n"
+"PO-Revision-Date: 2026-11-17 00:00+0900\n"
+"Language-Team: French\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: src/settings.ts
+msgid "Search & Replace i18n"
+msgstr ""
+
+#: src/settings.ts
+msgid "GUI Preference"
+msgstr "Préférence d’interface"
+
+#: src/settings.ts
+msgid "If you don't like the panel, you can switch to a popup dialog instead."
+msgstr "Si le panneau ne vous convient pas, vous pouvez utiliser une boîte de dialogue à la place."
+
+#: src/settings.ts
+msgid "Open a panel (default, recommended)"
+msgstr "Ouvrir un panneau (par défaut, recommandé)"
+
+#: src/settings.ts
+msgid "Open a dialog (like in previous versions)"
+msgstr "Ouvrir une boîte de dialogue (comme dans les versions précédentes)"
+
+#: src/index.ts src/panel.ts src/dialog.ts
+msgid "Search and replace"
+msgstr "Rechercher et remplacer"
+
+#: src/index.ts
+msgid "Find previous"
+msgstr "Rechercher le précédent"
+
+#: src/index.ts
+msgid "Find next"
+msgstr "Rechercher le suivant"
+
+#: src/index.ts src/panel.ts src/dialog.ts
+msgid "Replace"
+msgstr "Remplacer"
+
+#: src/index.ts src/panel.ts
+msgid "Replace all"
+msgstr "Tout remplacer"
+
+#: src/panel.ts
+msgid "Close"
+msgstr "Fermer"
+
+#: src/panel.ts
+msgid "Please return to the markdown editor."
+msgstr "Veuillez revenir à l’éditeur Markdown."
+
+#: src/panel.ts src/dialog.ts
+msgid "Find"
+msgstr "Rechercher"
+
+#: src/panel.ts
+msgid "Previous"
+msgstr "Précédent"
+
+#: src/panel.ts
+msgid "Next"
+msgstr "Suivant"
+
+#: src/panel.ts
+msgid "(all)"
+msgstr "(tout)"
+
+#: src/panel.ts
+msgid "Regex:"
+msgstr "Regex :"
+
+#: src/panel.ts src/dialog.ts
+msgid "Options:"
+msgstr "Options :"
+
+#: src/panel.ts src/dialog.ts
+msgid "Wrap around"
+msgstr "Reprendre au début"
+
+#: src/panel.ts src/dialog.ts
+msgid "Match case"
+msgstr "Respecter la casse"
+
+#: src/panel.ts src/dialog.ts
+msgid "Match whole words only"
+msgstr "Mots entiers uniquement"
+
+#: src/panel.ts src/dialog.ts
+msgid "Preserve case"
+msgstr "Conserver la casse"
+
+#: src/panel.ts src/dialog.ts
+msgid "Use 'multi line' flag"
+msgstr "Utiliser l’indicateur « multiligne »"
+
+#: src/panel.ts src/dialog.ts
+msgid "Literal search"
+msgstr "Recherche littérale"
+
+#: src/panel.ts src/dialog.ts
+msgid "Use Wildcards"
+msgstr "Utiliser les caractères génériques"
+
+#: src/panel.ts src/dialog.ts
+msgid "Use Regular Expression"
+msgstr "Utiliser les expressions régulières"
+
+#: src/panel.ts
+msgid "Show help"
+msgstr "Afficher l’aide"
+
+#: src/panel.ts
+msgid "When you reach the end of the note, it will wrap around to the beginning of the note (and vice versa)."
+msgstr "Lorsque vous atteignez la fin de la note, la recherche reprend au début de la note (et inversement)."
+
+#: src/panel.ts
+msgid "With wildcards enabled, you can search using <code>?</code> (any <b>one</b> character) and <code>*</code> (any characters, zero or more). Escape them like so: <code>\\*</code>, <code>\\?</code>"
+msgstr "Avec les caractères génériques, vous pouvez rechercher avec <code>?</code> (<b>un</b> caractère quelconque) et <code>*</code> (zéro ou plusieurs caractères quelconques). Échappez-les ainsi : <code>\\*</code>, <code>\\?</code>"
+
+#: src/panel.ts
+msgid "If you enable regular expressions, it's going to use JavaScript's regex. You can also use groups in the replacement text using <code>$1</code>, <code>$2</code>, and so on. Tip: Use regex101.com"
+msgstr "Si vous activez les expressions régulières, ce sont celles de JavaScript qui sont utilisées. Dans le texte de remplacement, vous pouvez utiliser les groupes avec <code>$1</code>, <code>$2</code>, etc. Astuce : utilisez regex101.com"
+
+#: src/panel.ts
+msgid "This plugin internally translates every search pattern to a regular expression. You can preview the used regex."
+msgstr "Ce plugin convertit en interne chaque motif de recherche en expression régulière. Vous pouvez prévisualiser l’expression régulière utilisée."
+
+#: src/cmPlugin.ts
+msgid "Empty pattern"
+msgstr "Motif vide"
+
+#: src/cmPlugin.ts
+msgid "Please enter a search pattern."
+msgstr "Veuillez saisir un motif de recherche."
+
+#: src/cmPlugin.ts
+msgid "Invalid regular expression"
+msgstr "Expression régulière invalide"
+
+#: src/cmPlugin.ts
+msgid "No more occurences found"
+msgstr "Aucune autre occurrence trouvée"
+
+#: src/cmPlugin.ts
+#, c-format
+msgid "\"%s\" couldn't be found."
+msgstr "« %s » est introuvable."
+
+#: src/cmPlugin.ts
+msgid "No occurences found"
+msgstr "Aucune occurrence trouvée"
+
+#: src/cmPlugin.ts
+#, c-format
+msgid "\"%s\" couldn't be found. Nothing was replaced."
+msgstr "« %s » est introuvable. Rien n’a été remplacé."

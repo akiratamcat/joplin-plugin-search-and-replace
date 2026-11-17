@@ -1,0 +1,166 @@
+# Search & Replace i18n - translation template.
+# Copyright (C) FelisDiligens, akiratamcat
+# This file is distributed under the same license as the plugin (MIT).
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: joplin-plugin-search-and-replace-i18n\n"
+"Report-Msgid-Bugs-To: https://github.com/akiratamcat/joplin-plugin-search-and-replace/issues\n"
+"POT-Creation-Date: 2026-11-17 00:00+0900\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/settings.ts
+msgid "Search & Replace i18n"
+msgstr ""
+
+#: src/settings.ts
+msgid "GUI Preference"
+msgstr ""
+
+#: src/settings.ts
+msgid "If you don't like the panel, you can switch to a popup dialog instead."
+msgstr ""
+
+#: src/settings.ts
+msgid "Open a panel (default, recommended)"
+msgstr ""
+
+#: src/settings.ts
+msgid "Open a dialog (like in previous versions)"
+msgstr ""
+
+#: src/index.ts src/panel.ts src/dialog.ts
+msgid "Search and replace"
+msgstr ""
+
+#: src/index.ts
+msgid "Find previous"
+msgstr ""
+
+#: src/index.ts
+msgid "Find next"
+msgstr ""
+
+#: src/index.ts src/panel.ts src/dialog.ts
+msgid "Replace"
+msgstr ""
+
+#: src/index.ts src/panel.ts
+msgid "Replace all"
+msgstr ""
+
+#: src/panel.ts
+msgid "Close"
+msgstr ""
+
+#: src/panel.ts
+msgid "Please return to the markdown editor."
+msgstr ""
+
+#: src/panel.ts src/dialog.ts
+msgid "Find"
+msgstr ""
+
+#: src/panel.ts
+msgid "Previous"
+msgstr ""
+
+#: src/panel.ts
+msgid "Next"
+msgstr ""
+
+#: src/panel.ts
+msgid "(all)"
+msgstr ""
+
+#: src/panel.ts
+msgid "Regex:"
+msgstr ""
+
+#: src/panel.ts src/dialog.ts
+msgid "Options:"
+msgstr ""
+
+#: src/panel.ts src/dialog.ts
+msgid "Wrap around"
+msgstr ""
+
+#: src/panel.ts src/dialog.ts
+msgid "Match case"
+msgstr ""
+
+#: src/panel.ts src/dialog.ts
+msgid "Match whole words only"
+msgstr ""
+
+#: src/panel.ts src/dialog.ts
+msgid "Preserve case"
+msgstr ""
+
+#: src/panel.ts src/dialog.ts
+msgid "Use 'multi line' flag"
+msgstr ""
+
+#: src/panel.ts src/dialog.ts
+msgid "Literal search"
+msgstr ""
+
+#: src/panel.ts src/dialog.ts
+msgid "Use Wildcards"
+msgstr ""
+
+#: src/panel.ts src/dialog.ts
+msgid "Use Regular Expression"
+msgstr ""
+
+#: src/panel.ts
+msgid "Show help"
+msgstr ""
+
+#: src/panel.ts
+msgid "When you reach the end of the note, it will wrap around to the beginning of the note (and vice versa)."
+msgstr ""
+
+#: src/panel.ts
+msgid "With wildcards enabled, you can search using <code>?</code> (any <b>one</b> character) and <code>*</code> (any characters, zero or more). Escape them like so: <code>\\*</code>, <code>\\?</code>"
+msgstr ""
+
+#: src/panel.ts
+msgid "If you enable regular expressions, it's going to use JavaScript's regex. You can also use groups in the replacement text using <code>$1</code>, <code>$2</code>, and so on. Tip: Use regex101.com"
+msgstr ""
+
+#: src/panel.ts
+msgid "This plugin internally translates every search pattern to a regular expression. You can preview the used regex."
+msgstr ""
+
+#: src/cmPlugin.ts
+msgid "Empty pattern"
+msgstr ""
+
+#: src/cmPlugin.ts
+msgid "Please enter a search pattern."
+msgstr ""
+
+#: src/cmPlugin.ts
+msgid "Invalid regular expression"
+msgstr ""
+
+#: src/cmPlugin.ts
+msgid "No more occurences found"
+msgstr ""
+
+#: src/cmPlugin.ts
+#, c-format
+msgid "\"%s\" couldn't be found."
+msgstr ""
+
+#: src/cmPlugin.ts
+msgid "No occurences found"
+msgstr ""
+
+#: src/cmPlugin.ts
+#, c-format
+msgid "\"%s\" couldn't be found. Nothing was replaced."
+msgstr ""

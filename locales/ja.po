@@ -1,0 +1,170 @@
+# Search & Replace i18n - UI translations.
+# Copyright (C) FelisDiligens, akiratamcat
+# This file is distributed under the same license as the plugin (MIT).
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: joplin-plugin-search-and-replace-i18n\n"
+"Report-Msgid-Bugs-To: https://github.com/akiratamcat/joplin-plugin-search-and-replace/issues\n"
+"POT-Creation-Date: 2026-11-17 00:00+0900\n"
+"PO-Revision-Date: 2026-11-17 00:00+0900\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/settings.ts
+msgid "Search & Replace i18n"
+msgstr ""
+
+#: src/settings.ts
+msgid "GUI Preference"
+msgstr "GUI の表示方法"
+
+#: src/settings.ts
+msgid "If you don't like the panel, you can switch to a popup dialog instead."
+msgstr "パネルが使いにくい場合は、ポップアップ ダイアログに切り替えられます。"
+
+#: src/settings.ts
+msgid "Open a panel (default, recommended)"
+msgstr "パネルを開く（既定、推奨）"
+
+#: src/settings.ts
+msgid "Open a dialog (like in previous versions)"
+msgstr "ダイアログを開く（以前のバージョンと同じ）"
+
+#: src/index.ts src/panel.ts src/dialog.ts
+msgid "Search and replace"
+msgstr "検索と置換"
+
+#: src/index.ts
+msgid "Find previous"
+msgstr "前を検索"
+
+#: src/index.ts
+msgid "Find next"
+msgstr "次を検索"
+
+#: src/index.ts src/panel.ts src/dialog.ts
+msgid "Replace"
+msgstr "置換"
+
+#: src/index.ts src/panel.ts
+msgid "Replace all"
+msgstr "すべて置換"
+
+#: src/panel.ts
+msgid "Close"
+msgstr "閉じる"
+
+#: src/panel.ts
+msgid "Please return to the markdown editor."
+msgstr "Markdown エディターに戻ってください。"
+
+#: src/panel.ts src/dialog.ts
+msgid "Find"
+msgstr "検索"
+
+#: src/panel.ts
+msgid "Previous"
+msgstr "前へ"
+
+#: src/panel.ts
+msgid "Next"
+msgstr "次へ"
+
+#: src/panel.ts
+msgid "(all)"
+msgstr "（すべて）"
+
+#: src/panel.ts
+msgid "Regex:"
+msgstr "正規表現:"
+
+#: src/panel.ts src/dialog.ts
+msgid "Options:"
+msgstr "オプション:"
+
+#: src/panel.ts src/dialog.ts
+msgid "Wrap around"
+msgstr "折り返して検索"
+
+#: src/panel.ts src/dialog.ts
+msgid "Match case"
+msgstr "大文字と小文字を区別"
+
+#: src/panel.ts src/dialog.ts
+msgid "Match whole words only"
+msgstr "単語単位で検索"
+
+#: src/panel.ts src/dialog.ts
+msgid "Preserve case"
+msgstr "大文字と小文字の形を保持"
+
+#: src/panel.ts src/dialog.ts
+msgid "Use 'multi line' flag"
+msgstr "「複数行」フラグを使用"
+
+#: src/panel.ts src/dialog.ts
+msgid "Literal search"
+msgstr "通常の検索"
+
+#: src/panel.ts src/dialog.ts
+msgid "Use Wildcards"
+msgstr "ワイルドカードを使用"
+
+#: src/panel.ts src/dialog.ts
+msgid "Use Regular Expression"
+msgstr "正規表現を使用"
+
+#: src/panel.ts
+msgid "Show help"
+msgstr "ヘルプを表示"
+
+#: src/panel.ts
+msgid "When you reach the end of the note, it will wrap around to the beginning of the note (and vice versa)."
+msgstr "ノートの末尾まで達したら、ノートの先頭に戻って検索を続けます（逆方向も同様）。"
+
+#: src/panel.ts
+msgid "With wildcards enabled, you can search using <code>?</code> (any <b>one</b> character) and <code>*</code> (any characters, zero or more). Escape them like so: <code>\\*</code>, <code>\\?</code>"
+msgstr "ワイルドカードを有効にすると、<code>?</code>（任意の<b>1</b>文字）と <code>*</code>（0 文字以上の任意の文字列）を使って検索できます。これらの文字そのものを検索するには <code>\\*</code>、<code>\\?</code> のようにエスケープします。"
+
+#: src/panel.ts
+msgid "If you enable regular expressions, it's going to use JavaScript's regex. You can also use groups in the replacement text using <code>$1</code>, <code>$2</code>, and so on. Tip: Use regex101.com"
+msgstr "正規表現を有効にすると、JavaScript の正規表現が使われます。置換テキストでは <code>$1</code>、<code>$2</code> などでグループを参照できます。ヒント: regex101.com が便利です。"
+
+#: src/panel.ts
+msgid "This plugin internally translates every search pattern to a regular expression. You can preview the used regex."
+msgstr "このプラグインは、すべての検索パターンを内部で正規表現に変換します。実際に使われる正規表現をプレビューできます。"
+
+#: src/cmPlugin.ts
+msgid "Empty pattern"
+msgstr "検索パターンが空です"
+
+#: src/cmPlugin.ts
+msgid "Please enter a search pattern."
+msgstr "検索パターンを入力してください。"
+
+#: src/cmPlugin.ts
+msgid "Invalid regular expression"
+msgstr "正規表現が正しくありません"
+
+#: src/cmPlugin.ts
+msgid "No more occurences found"
+msgstr "これ以上見つかりません"
+
+#: src/cmPlugin.ts
+#, c-format
+msgid "\"%s\" couldn't be found."
+msgstr "「%s」は見つかりませんでした。"
+
+#: src/cmPlugin.ts
+msgid "No occurences found"
+msgstr "見つかりません"
+
+#: src/cmPlugin.ts
+#, c-format
+msgid "\"%s\" couldn't be found. Nothing was replaced."
+msgstr "「%s」は見つかりませんでした。何も置換されていません。"

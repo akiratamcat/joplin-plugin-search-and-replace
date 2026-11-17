@@ -1,0 +1,170 @@
+# Search & Replace i18n - UI translations.
+# Copyright (C) FelisDiligens, akiratamcat
+# This file is distributed under the same license as the plugin (MIT).
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: joplin-plugin-search-and-replace-i18n\n"
+"Report-Msgid-Bugs-To: https://github.com/akiratamcat/joplin-plugin-search-and-replace/issues\n"
+"POT-Creation-Date: 2026-11-17 00:00+0900\n"
+"PO-Revision-Date: 2026-11-17 00:00+0900\n"
+"Language-Team: Chinese (Simplified)\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/settings.ts
+msgid "Search & Replace i18n"
+msgstr ""
+
+#: src/settings.ts
+msgid "GUI Preference"
+msgstr "界面偏好"
+
+#: src/settings.ts
+msgid "If you don't like the panel, you can switch to a popup dialog instead."
+msgstr "如果您不喜欢面板，可以改用弹出对话框。"
+
+#: src/settings.ts
+msgid "Open a panel (default, recommended)"
+msgstr "打开面板（默认，推荐）"
+
+#: src/settings.ts
+msgid "Open a dialog (like in previous versions)"
+msgstr "打开对话框（与旧版本相同）"
+
+#: src/index.ts src/panel.ts src/dialog.ts
+msgid "Search and replace"
+msgstr "查找和替换"
+
+#: src/index.ts
+msgid "Find previous"
+msgstr "查找上一个"
+
+#: src/index.ts
+msgid "Find next"
+msgstr "查找下一个"
+
+#: src/index.ts src/panel.ts src/dialog.ts
+msgid "Replace"
+msgstr "替换"
+
+#: src/index.ts src/panel.ts
+msgid "Replace all"
+msgstr "全部替换"
+
+#: src/panel.ts
+msgid "Close"
+msgstr "关闭"
+
+#: src/panel.ts
+msgid "Please return to the markdown editor."
+msgstr "请返回 Markdown 编辑器。"
+
+#: src/panel.ts src/dialog.ts
+msgid "Find"
+msgstr "查找"
+
+#: src/panel.ts
+msgid "Previous"
+msgstr "上一个"
+
+#: src/panel.ts
+msgid "Next"
+msgstr "下一个"
+
+#: src/panel.ts
+msgid "(all)"
+msgstr "（全部）"
+
+#: src/panel.ts
+msgid "Regex:"
+msgstr "正则表达式："
+
+#: src/panel.ts src/dialog.ts
+msgid "Options:"
+msgstr "选项："
+
+#: src/panel.ts src/dialog.ts
+msgid "Wrap around"
+msgstr "循环查找"
+
+#: src/panel.ts src/dialog.ts
+msgid "Match case"
+msgstr "区分大小写"
+
+#: src/panel.ts src/dialog.ts
+msgid "Match whole words only"
+msgstr "全字匹配"
+
+#: src/panel.ts src/dialog.ts
+msgid "Preserve case"
+msgstr "保留大小写"
+
+#: src/panel.ts src/dialog.ts
+msgid "Use 'multi line' flag"
+msgstr "使用“多行”标志"
+
+#: src/panel.ts src/dialog.ts
+msgid "Literal search"
+msgstr "普通查找"
+
+#: src/panel.ts src/dialog.ts
+msgid "Use Wildcards"
+msgstr "使用通配符"
+
+#: src/panel.ts src/dialog.ts
+msgid "Use Regular Expression"
+msgstr "使用正则表达式"
+
+#: src/panel.ts
+msgid "Show help"
+msgstr "显示帮助"
+
+#: src/panel.ts
+msgid "When you reach the end of the note, it will wrap around to the beginning of the note (and vice versa)."
+msgstr "到达笔记末尾时，将从笔记开头继续查找（反之亦然）。"
+
+#: src/panel.ts
+msgid "With wildcards enabled, you can search using <code>?</code> (any <b>one</b> character) and <code>*</code> (any characters, zero or more). Escape them like so: <code>\\*</code>, <code>\\?</code>"
+msgstr "启用通配符后，可以使用 <code>?</code>（任意<b>一个</b>字符）和 <code>*</code>（零个或多个任意字符）进行查找。如需查找这些字符本身，请这样转义：<code>\\*</code>、<code>\\?</code>"
+
+#: src/panel.ts
+msgid "If you enable regular expressions, it's going to use JavaScript's regex. You can also use groups in the replacement text using <code>$1</code>, <code>$2</code>, and so on. Tip: Use regex101.com"
+msgstr "启用正则表达式后，将使用 JavaScript 的正则表达式。在替换文本中可以使用 <code>$1</code>、<code>$2</code> 等引用分组。提示：可以使用 regex101.com"
+
+#: src/panel.ts
+msgid "This plugin internally translates every search pattern to a regular expression. You can preview the used regex."
+msgstr "本插件会在内部将所有查找模式转换为正则表达式。您可以预览实际使用的正则表达式。"
+
+#: src/cmPlugin.ts
+msgid "Empty pattern"
+msgstr "查找内容为空"
+
+#: src/cmPlugin.ts
+msgid "Please enter a search pattern."
+msgstr "请输入查找内容。"
+
+#: src/cmPlugin.ts
+msgid "Invalid regular expression"
+msgstr "无效的正则表达式"
+
+#: src/cmPlugin.ts
+msgid "No more occurences found"
+msgstr "未找到更多匹配项"
+
+#: src/cmPlugin.ts
+#, c-format
+msgid "\"%s\" couldn't be found."
+msgstr "找不到“%s”。"
+
+#: src/cmPlugin.ts
+msgid "No occurences found"
+msgstr "未找到匹配项"
+
+#: src/cmPlugin.ts
+#, c-format
+msgid "\"%s\" couldn't be found. Nothing was replaced."
+msgstr "找不到“%s”。未进行任何替换。"

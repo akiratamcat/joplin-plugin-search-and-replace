@@ -1,0 +1,170 @@
+# Search & Replace i18n - UI translations.
+# Copyright (C) FelisDiligens, akiratamcat
+# This file is distributed under the same license as the plugin (MIT).
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: joplin-plugin-search-and-replace-i18n\n"
+"Report-Msgid-Bugs-To: https://github.com/akiratamcat/joplin-plugin-search-and-replace/issues\n"
+"POT-Creation-Date: 2026-11-17 00:00+0900\n"
+"PO-Revision-Date: 2026-11-17 00:00+0900\n"
+"Language-Team: Italian\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/settings.ts
+msgid "Search & Replace i18n"
+msgstr ""
+
+#: src/settings.ts
+msgid "GUI Preference"
+msgstr "Preferenza interfaccia"
+
+#: src/settings.ts
+msgid "If you don't like the panel, you can switch to a popup dialog instead."
+msgstr "Se il pannello non ti piace, puoi passare a una finestra di dialogo."
+
+#: src/settings.ts
+msgid "Open a panel (default, recommended)"
+msgstr "Apri un pannello (predefinito, consigliato)"
+
+#: src/settings.ts
+msgid "Open a dialog (like in previous versions)"
+msgstr "Apri una finestra di dialogo (come nelle versioni precedenti)"
+
+#: src/index.ts src/panel.ts src/dialog.ts
+msgid "Search and replace"
+msgstr "Cerca e sostituisci"
+
+#: src/index.ts
+msgid "Find previous"
+msgstr "Trova precedente"
+
+#: src/index.ts
+msgid "Find next"
+msgstr "Trova successivo"
+
+#: src/index.ts src/panel.ts src/dialog.ts
+msgid "Replace"
+msgstr "Sostituisci"
+
+#: src/index.ts src/panel.ts
+msgid "Replace all"
+msgstr "Sostituisci tutto"
+
+#: src/panel.ts
+msgid "Close"
+msgstr "Chiudi"
+
+#: src/panel.ts
+msgid "Please return to the markdown editor."
+msgstr "Torna all’editor Markdown."
+
+#: src/panel.ts src/dialog.ts
+msgid "Find"
+msgstr "Trova"
+
+#: src/panel.ts
+msgid "Previous"
+msgstr "Precedente"
+
+#: src/panel.ts
+msgid "Next"
+msgstr "Successivo"
+
+#: src/panel.ts
+msgid "(all)"
+msgstr "(tutto)"
+
+#: src/panel.ts
+msgid "Regex:"
+msgstr "Regex:"
+
+#: src/panel.ts src/dialog.ts
+msgid "Options:"
+msgstr "Opzioni:"
+
+#: src/panel.ts src/dialog.ts
+msgid "Wrap around"
+msgstr "Ricomincia dall’inizio"
+
+#: src/panel.ts src/dialog.ts
+msgid "Match case"
+msgstr "Maiuscole/minuscole"
+
+#: src/panel.ts src/dialog.ts
+msgid "Match whole words only"
+msgstr "Solo parole intere"
+
+#: src/panel.ts src/dialog.ts
+msgid "Preserve case"
+msgstr "Mantieni maiuscole/minuscole"
+
+#: src/panel.ts src/dialog.ts
+msgid "Use 'multi line' flag"
+msgstr "Usa il flag “multilinea”"
+
+#: src/panel.ts src/dialog.ts
+msgid "Literal search"
+msgstr "Ricerca letterale"
+
+#: src/panel.ts src/dialog.ts
+msgid "Use Wildcards"
+msgstr "Usa caratteri jolly"
+
+#: src/panel.ts src/dialog.ts
+msgid "Use Regular Expression"
+msgstr "Usa espressioni regolari"
+
+#: src/panel.ts
+msgid "Show help"
+msgstr "Mostra aiuto"
+
+#: src/panel.ts
+msgid "When you reach the end of the note, it will wrap around to the beginning of the note (and vice versa)."
+msgstr "Quando raggiungi la fine della nota, la ricerca riprende dall’inizio della nota (e viceversa)."
+
+#: src/panel.ts
+msgid "With wildcards enabled, you can search using <code>?</code> (any <b>one</b> character) and <code>*</code> (any characters, zero or more). Escape them like so: <code>\\*</code>, <code>\\?</code>"
+msgstr "Con i caratteri jolly attivi puoi cercare usando <code>?</code> (<b>un</b> carattere qualsiasi) e <code>*</code> (qualsiasi sequenza di caratteri, anche vuota). Per cercarli letteralmente, usa l’escape: <code>\\*</code>, <code>\\?</code>"
+
+#: src/panel.ts
+msgid "If you enable regular expressions, it's going to use JavaScript's regex. You can also use groups in the replacement text using <code>$1</code>, <code>$2</code>, and so on. Tip: Use regex101.com"
+msgstr "Se attivi le espressioni regolari, vengono usate quelle di JavaScript. Nel testo di sostituzione puoi usare i gruppi con <code>$1</code>, <code>$2</code> e così via. Suggerimento: usa regex101.com"
+
+#: src/panel.ts
+msgid "This plugin internally translates every search pattern to a regular expression. You can preview the used regex."
+msgstr "Questo plugin converte internamente ogni modello di ricerca in un’espressione regolare. Puoi vedere l’anteprima dell’espressione regolare usata."
+
+#: src/cmPlugin.ts
+msgid "Empty pattern"
+msgstr "Modello vuoto"
+
+#: src/cmPlugin.ts
+msgid "Please enter a search pattern."
+msgstr "Inserisci un modello di ricerca."
+
+#: src/cmPlugin.ts
+msgid "Invalid regular expression"
+msgstr "Espressione regolare non valida"
+
+#: src/cmPlugin.ts
+msgid "No more occurences found"
+msgstr "Nessun’altra occorrenza trovata"
+
+#: src/cmPlugin.ts
+#, c-format
+msgid "\"%s\" couldn't be found."
+msgstr "Impossibile trovare “%s”."
+
+#: src/cmPlugin.ts
+msgid "No occurences found"
+msgstr "Nessuna occorrenza trovata"
+
+#: src/cmPlugin.ts
+#, c-format
+msgid "\"%s\" couldn't be found. Nothing was replaced."
+msgstr "Impossibile trovare “%s”. Non è stato sostituito nulla."
