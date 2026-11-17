@@ -1,3 +1,18 @@
+> [!NOTE]
+> **Search & Replace i18n** — personal test build (fork) / 個人用テスト版（フォーク）
+>
+> This fork translates the plugin UI using gettext PO files (`locales/*.po`) and follows Joplin's language setting automatically.
+> Supported: Japanese, Simplified Chinese, Traditional Chinese, Korean, German, French, Spanish, Italian, Portuguese (Brazil), Russian (fallback: English).
+> It is **not** an official release. Original plugin by [FelisDiligens](https://github.com/FelisDiligens/joplin-plugin-search-and-replace); i18n by akiratamcat.
+> Do not install it together with the original plugin (same commands and Ctrl+H shortcut).
+>
+> このフォークは gettext の PO ファイル（`locales/*.po`）でプラグインの UI を翻訳し、Joplin 本体の言語設定に合わせて自動的に表示言語を切り替えます。
+> 対応言語: 日本語、簡体字中国語、繁体字中国語、韓国語、ドイツ語、フランス語、スペイン語、イタリア語、ポルトガル語（ブラジル）、ロシア語（その他は英語）。
+> 公式版ではありません。原作者は [FelisDiligens](https://github.com/FelisDiligens/joplin-plugin-search-and-replace) 氏、翻訳対応は akiratamcat です。
+> オリジナル版と同時にインストールしないでください（コマンドと Ctrl+H ショートカットが重複します）。
+>
+> **Translators / 翻訳者向け:** edit `locales/<lang>.po` (template: `locales/messages.pot`), then run `npm run dist` (on Node 17+: `NODE_OPTIONS=--openssl-legacy-provider npm run dist`).
+
 <table>
     <tr>
         <td colspan="3" align="center">
